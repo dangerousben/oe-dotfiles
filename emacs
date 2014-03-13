@@ -8,6 +8,7 @@
 (setq column-number-mode t)
 (setq inhibit-splash-screen t)
 (setq ispell-dictionary "british")
+(setq kill-do-not-save-duplicates t)
 (setq make-backup-files nil)
 (setq scroll-preserve-screen-position t)
 (setq select-active-regions t)
