@@ -1,3 +1,5 @@
+; -*-emacs-lisp-*-
+
 (package-initialize)
 
 (add-to-list 'package-archives
