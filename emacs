@@ -48,7 +48,6 @@
    (message buffer-file-name)))
 
 (define-key emacs-lisp-mode-map (kbd "C-c C-c") 'eval-defun)
-(define-key vc-annotate-mode-map (kbd "q") 'kill-buffer-and-window)
 
 (add-hook 'after-init-hook 'server-start)
 (setq server-raise-frame t)
@@ -61,6 +60,9 @@
 
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward)
+
+(require 'vc-annotate)
+(define-key vc-annotate-mode-map (kbd "q") 'kill-buffer-and-window)
 
 (defun my-emacs-lisp-mode-hook ()
   (eldoc-mode 1))
