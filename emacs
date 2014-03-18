@@ -156,7 +156,6 @@
 
 ")))
 
-
 (defun php-get-function-params ()
   (save-excursion
     (let* ((start (point-marker))
