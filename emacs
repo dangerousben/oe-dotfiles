@@ -91,7 +91,8 @@
 
 (defun my-js-mode-hook ()
   (setq indent-tabs-mode t
-	tab-width 4))
+	tab-width 4)
+  (subword-mode t))
 (add-hook 'js-mode-hook 'my-js-mode-hook)
 
 (defun flymake-display-err-minibuf ()
