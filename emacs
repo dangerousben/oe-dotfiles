@@ -58,6 +58,9 @@
 (setq ido-auto-merge-work-directories-length -1)
 (setq ido-enable-flex-matching t)
 
+(require 'dabbrev)
+(setq dabbrev-case-replace nil)
+
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward)
 
