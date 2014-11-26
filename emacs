@@ -105,6 +105,11 @@
   (subword-mode t))
 (add-hook 'js-mode-hook 'my-js-mode-hook)
 
+(defun my-json-mode-hook ()
+  (subword-mode 1)
+  (flymake-json-load))
+(add-hook 'json-mode-hook 'my-json-mode-hook)
+
 (defun my-scala-mode-hook ()
   (subword-mode 1))
 (add-hook 'scala-mode-hook 'my-scala-mode-hook)
