@@ -105,6 +105,11 @@
   (subword-mode t))
 (add-hook 'js-mode-hook 'my-js-mode-hook)
 
+(defun my-scala-mode-hook ()
+  (subword-mode 1))
+(add-hook 'scala-mode-hook 'my-scala-mode-hook)
+(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
+
 (defun flymake-display-err-minibuf ()
   "Displays the error/warning for the current line in the minibuffer"
   (interactive)
