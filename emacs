@@ -67,6 +67,10 @@
 (require 'vc-annotate)
 (define-key vc-annotate-mode-map (kbd "q") 'kill-buffer-and-window)
 
+(eval-after-load "comint"
+  '(define-key comint-mode-map (kbd "C-c M-o")
+    (lambda () (interactive) (let ((comint-buffer-maximum-size 0)) (comint-truncate-buffer)))))
+
 (defun my-emacs-lisp-mode-hook ()
   (eldoc-mode 1))
 (add-hook 'emacs-lisp-mode-hook 'my-emacs-lisp-mode-hook)
